@@ -17,7 +17,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class ChipActivity extends AppCompatActivity {
 
     Chip chip;
-    MaterialButton btnAgregarEtiqueta, btnSeleccionados;
+    MaterialButton btnAgregarEtiqueta;
     ChipGroup chipGroup;
     TextInputEditText textEdit;
 
@@ -42,7 +42,7 @@ public class ChipActivity extends AppCompatActivity {
             }
         });
 
-        //-------------------- Codgio para el chipGroup --------------------------------
+        //-------------------- Codigo para el chipGroup --------------------------------
         btnAgregarEtiqueta = (MaterialButton)findViewById(R.id.btnAgregarEtiqueta);
         chipGroup = (ChipGroup)findViewById(R.id.chip_group);
         textEdit = (TextInputEditText) findViewById(R.id.input);

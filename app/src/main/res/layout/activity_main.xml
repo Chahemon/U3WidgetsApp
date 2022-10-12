@@ -16,7 +16,9 @@
         android:textAlignment="center"
         android:textColor="@color/purple_700"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_margin="20sp"
+        />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -163,6 +165,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_weight="0.5"
+                            android:backgroundTint="@color/teal_700"
                             android:onClick="btnImageButtonClick"
                             android:text="ImageButton"
                             android:textSize="10sp" />

@@ -13,9 +13,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FloatingActionButtonActivity extends AppCompatActivity {
 
+    // Creacion de las variables del codigo
     FloatingActionButton fab, fab1, fab2;
     Animation fabOpen, fabClose, rotateForward, rotateBackward;
-
     boolean isOpen = false;
 
     @Override

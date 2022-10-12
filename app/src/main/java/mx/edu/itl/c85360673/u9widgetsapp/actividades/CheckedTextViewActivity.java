@@ -9,6 +9,7 @@ import android.widget.CheckedTextView;
 
 public class CheckedTextViewActivity extends AppCompatActivity {
 
+    // Creamos la variable donde guardaremos la referencia al componente
     private CheckedTextView _chktxtvEjemplo;
 
     //----------------------------------------------------------------------------------------------
@@ -36,5 +37,6 @@ public class CheckedTextViewActivity extends AppCompatActivity {
             }
         } );
     }
+
     //----------------------------------------------------------------------------------------------
 }

@@ -13,132 +13,152 @@
         android:theme="@style/Theme.U9WidgetsApp">
         <activity
             android:name=".actividades.SeekBarDiscreteActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="SeekBarDiscrete">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.FloatingActionButtonActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="FloatingActionButton">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.SeekBarActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="SeekBarActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.ToggleButtonActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="ToggleButton">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.SearchViewActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="SearchViewActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.ImageViewActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="ImageViewActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.ChipActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="Chip">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.DatePickerActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="DatePickerActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.CalendarViewActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="CalendarView">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.TimePickerActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="TimePickerActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.RatingBarActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="RatingBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.ProgressBarHorizActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="ProgressBarHorizontal">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.SwitchActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="Switch">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.WebViewActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="WebView">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.ImageButtonActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="ImageButton">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.MultiAutoCompleteTextViewActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="MultiAutoCompleteTextView">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.MultiLineTextActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="MultiLineText">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".actividades.AutoCompleteTextViewActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="AutoCompleteTextView"/>
         <activity
             android:name=".actividades.RadioButtonActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="RadioButton"/>
         <activity
             android:name=".actividades.CheckedTextViewActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="CheckedTextViewActivity"/>
         <activity
             android:name=".actividades.MainActivity"
             android:exported="true">
@@ -150,10 +170,12 @@
         </activity>
         <activity
             android:name=".actividades.TextInputEditActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="TextInputEdit"/>
         <activity
             android:name=".actividades.CheckBoxActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="CheckBox"/>
     </application>
 
 </manifest>

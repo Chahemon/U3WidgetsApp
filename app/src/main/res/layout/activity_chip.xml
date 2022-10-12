@@ -4,46 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8AFF7D"
     android:padding="16dp"
     tools:context=".actividades.ChipActivity">
 
     <com.google.android.material.chip.Chip
         android:id="@+id/PruebaChip"
-        android:text="Tu Chip"
-        app:closeIcon="@drawable/ic_baseline_clear_24"
-        android:layout_centerHorizontal="true"
         style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="116dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        android:fontFamily="monospace"
+        android:text="Tu Chip"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:chipSurfaceColor="#03A9F4"
+        app:closeIcon="@drawable/ic_baseline_clear_24" />
 
     <LinearLayout
-        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/PruebaChip"
         android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input"
-            android:hint="Agregar chip"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </com.google.android.material.textfield.TextInputEditText>
+            android:layout_height="wrap_content"
+            android:hint="Agregar chip"></com.google.android.material.textfield.TextInputEditText>
+
         <LinearLayout
-            android:orientation="horizontal"
-            android:weightSum="1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnAgregarEtiqueta"
-                android:text="Agregar Chip"
-                android:layout_centerHorizontal="true"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Agregar Chip">
 
             </com.google.android.material.button.MaterialButton>
 

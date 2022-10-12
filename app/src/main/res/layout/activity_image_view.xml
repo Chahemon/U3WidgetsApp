@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EFE4E4"
     tools:context=".actividades.ImageViewActivity">
 
     <LinearLayout
@@ -29,6 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="fill_vertical"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="Aumentar transparencia" />
 
@@ -37,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="fill_vertical"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="Disminuir Transparencia" />
 
@@ -52,6 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill_vertical"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="Siguiente" />
 
@@ -60,6 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill_vertical"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="Matriz" />
 
@@ -68,6 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill_vertical"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="Ajustar XY" />
         </LinearLayout>
@@ -82,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill_vertical"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="START" />
 
@@ -90,6 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill_vertical"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="CENTER" />
 
@@ -98,6 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill_vertical"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="END" />
         </LinearLayout>

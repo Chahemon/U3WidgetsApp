@@ -4,25 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3CAEB8"
     tools:context=".actividades.CheckBoxActivity">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="monospace"
         android:text="Seleccione sus equipos favoritos:"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/teal_200"
+        android:layout_width="325dp"
+        android:layout_height="212dp"
+        android:background="#0003DAC5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,33 +35,52 @@
             android:id="@+id/_chkClubFutbol_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#DF2828"
             android:buttonTint="@color/purple_700"
+            android:fontFamily="monospace"
             android:onClick="chkClubFutbolClick"
-            android:text="Manchester Utd" />
+            android:text="Manchester Utd"
+            android:textColor="#FFEB3B"
+            android:textSize="18sp" />
 
         <CheckBox
             android:id="@+id/_chkClubFutbol_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FDF5F5"
+            android:backgroundTint="#FFFFFF"
             android:buttonTint="@color/purple_700"
+            android:fontFamily="serif"
             android:onClick="chkClubFutbolClick"
-            android:text="Real Madrid" />
+            android:text="Real Madrid"
+            android:textSize="18sp" />
 
         <CheckBox
             android:id="@+id/_chkClubFutbol_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#2039DC"
             android:buttonTint="@color/purple_700"
+            android:fontFamily="monospace"
             android:onClick="chkClubFutbolClick"
-            android:text="Bayern Munich" />
+            android:text="Barcelona"
+            android:textColor="#F60000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </RadioGroup>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="167dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
         android:onClick="btnEnviarClick"
         android:text="Enviar"
         app:layout_constraintEnd_toEndOf="parent"

@@ -20,53 +20,53 @@ public class ProgressBarHorizActivity extends AppCompatActivity {
     int progreso = 0;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_progress_bar_horiz);
+    protected void onCreate( Bundle savedInstanceState ) {
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_progress_bar_horiz );
 
-        progressBar = findViewById(R.id.progressBar);
-        edtUsu = findViewById(R.id.edtUsuario);
-        edtCon = findViewById(R.id.edtContrasena);
-        edtCargado = findViewById(R.id.edtProgreso);
+        progressBar = findViewById( R.id.progressBar );
+        edtUsu = findViewById( R.id.edtUsuario );
+        edtCon = findViewById( R.id.edtContrasena );
+        edtCargado = findViewById( R.id.edtProgreso );
 
     }
 
-    public void btnAceptarClick(View v){
+    public void btnAceptarClick( View v ){
         String usuario = edtUsu.getText().toString();
         String contrasena = edtCon.getText().toString();
 
-        if(usuario.equals("ejemplo")) {
-            if (contrasena.equals("ejemplo")) {
+        if( usuario.equals( "ejemplo" ) ) {
+            if ( contrasena.equals( "ejemplo" ) ) {
                 //Iniciamos el hilo con la accion del progress bar
-                new Thread(new Runnable() {
+                new Thread( new Runnable() {
                     @Override
                     public void run() {
-                        while (progreso < 100) {
+                        while ( progreso < 100 ) {
                             progreso = progreso + 3;
-                            handler.post(new Runnable() {
+                            handler.post( new Runnable() {
                                 @Override
-                                public void run() {
-                                    progressBar.setProgress(progreso);
-                                    if (progreso == 100) {
-                                        Toast.makeText(ProgressBarHorizActivity.this, "Inicio de sesion correcta", Toast.LENGTH_LONG).show();
+                                public void run () {
+                                    progressBar.setProgress( progreso );
+                                    if ( progreso == 100 ) {
+                                        Toast.makeText(ProgressBarHorizActivity.this, "Inicio de sesion correcta", Toast.LENGTH_LONG ).show();
                                     }
-                                    edtCargado.setText(progreso + " / " + progressBar.getMax());
+                                    edtCargado.setText( progreso + " / " + progressBar.getMax() );
                                 }
                             });
                             try {
                                 //Duerme el hilo por 200 milisegundos
-                                Thread.sleep(200);
-                            } catch (InterruptedException e) {
+                                Thread.sleep( 200 );
+                            } catch ( InterruptedException e ) {
                                 e.printStackTrace();
                             }
                         }
                     }
                 }).start();
-            }else{
-                Toast.makeText(ProgressBarHorizActivity.this, "Credenciales Incorrectas", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(ProgressBarHorizActivity.this, "Credenciales Incorrectas", Toast.LENGTH_LONG ).show();
             }
-        }else{
-            Toast.makeText(ProgressBarHorizActivity.this, "Credenciales Incorrectas", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(ProgressBarHorizActivity.this, "Credenciales Incorrectas", Toast.LENGTH_LONG ).show();
         }
     }
 }

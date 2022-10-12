@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
     }
     //----------------------------------------------------------------------------------------------
     public void  btnImageButtonClick ( View v ) {
-//        Intent intent = new Intent ( this, ImageButtonActivity.class );
-//        startActivity ( intent );
+        Intent intent = new Intent ( this, ImageButtonActivity.class );
+        startActivity ( intent );
     }
     //----------------------------------------------------------------------------------------------
     public void  btnChipClick ( View v ) {

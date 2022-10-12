@@ -11,11 +11,15 @@ import android.widget.Toast;
 
 public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
 
+    //----------------------------------------------------------------------------------------------
+    // Arreglo donde ponemos los Paises que apareceran como sugerencia
     private static final String[] lista = new String[]{"Mexico","Francia","España","Inglaterra",
             "Italia","Estados Unidos","Canada","Alemania","Rusia","Brasil","Argentina","Uruguay",
             "Colombia"};
 
     private MultiAutoCompleteTextView edtText;
+
+    //----------------------------------------------------------------------------------------------
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +33,14 @@ public class MultiAutoCompleteTextViewActivity extends AppCompatActivity {
         edtText.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
     }
 
+    //----------------------------------------------------------------------------------------------
+
     public void mostrarEntradaOnClick(View v){
 
         String entrada = edtText.getText().toString();
         Toast.makeText(this, entrada, Toast.LENGTH_SHORT).show();
 
     }
+
+    //----------------------------------------------------------------------------------------------
 }

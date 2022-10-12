@@ -13,26 +13,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#3C3D40"
         android:gravity="center"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="244dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:background="@color/white"
+            android:background="#FF424242"
+            android:fontFamily="monospace"
+            android:shadowColor="#FFFFFF"
             android:text="Usuario: ejemplo"
-            android:textSize="20sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="241dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:background="@color/white"
+            android:background="#FF424242"
+            android:fontFamily="monospace"
             android:text="Contraseña: ejemplo"
-            android:textSize="20sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
 
         <EditText
             android:id="@+id/edtUsuario"
@@ -60,7 +66,7 @@
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="368dp"
-            android:layout_height="wrap_content"
+            android:layout_height="38dp"
             android:layout_marginBottom="20dp"
             android:background="@color/design_default_color_surface" />
 
@@ -75,8 +81,9 @@
 
         <Button
             android:id="@+id/btnAceptar"
-            android:layout_width="207dp"
-            android:layout_height="wrap_content"
+            android:layout_width="236dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="35dp"
             android:layout_marginBottom="20dp"
             android:onClick="btnAceptarClick"
             android:text="Aceptar" />

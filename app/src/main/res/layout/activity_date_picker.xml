@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#676464"
     tools:context=".actividades.DatePickerActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
+        android:fontFamily="sans-serif-black"
         android:text="Seleccione la Fecha: "
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -20,17 +22,16 @@
 
     <Button
         android:id="@+id/btnDatePicker"
+        style="?spinnerStyle"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="ENE 01 2020"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        style= "?spinnerStyle"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/textViewFecha"
-        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
         android:onClick="AbrirDatePicker"
-        />
+        android:text="ENE 01 2020"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFecha"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 public class CalendarViewActivity extends AppCompatActivity {
 
+    // Declaramos las variables que usaremos en los Activity
     CalendarView calendarView;
     TextView myDate;
     String date;
@@ -21,11 +22,13 @@ public class CalendarViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_view);
+
+        // Asignamos la referencia de los componentes a las variables creadas
         calendarView = findViewById(R.id.calendarView);
         myDate  = (TextView) findViewById(R.id.txtDate);
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
-
+            // Podemos la fecha seleccionada guardando los valores en las variables i´s
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
                 myDate.setText("Fecha seleccionada:" + date);
@@ -35,6 +38,7 @@ public class CalendarViewActivity extends AppCompatActivity {
         });
     }
 
+    // Boton que muestra la ultima hora seleccionada y cierra el Activity
     public void regresarClick( View v ) {
         Log.d("Hola","fecha seleccionada: " + date);
         Toast.makeText( calendarView.getContext(),"Ultima fecha seleccionada: " + date,Toast.LENGTH_LONG).show();

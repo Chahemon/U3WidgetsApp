@@ -9,12 +9,15 @@ import android.widget.AutoCompleteTextView;
 
 public class AutoCompleteTextViewActivity extends AppCompatActivity {
 
+    // Creamos las variables necesarias para el Activity
+    // Creamos un arreglo de Strings, donde guardaremos los apellidos que saldran de autocompletado
     private AutoCompleteTextView _autoctxtvApellido;
     private String [] _arrApellidos = { "Vazquez", "Vasquez", "Flores", "Floriuc", "Gutierrez",
                                      "Gomez", "Gonzalez", "Gonzalitoz", "Fernandez", "Fonseca",
                                      "Sanchez", "Sosa", "Salas", "Salmeron", "Solano"   };
 
     //----------------------------------------------------------------------------------------------
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

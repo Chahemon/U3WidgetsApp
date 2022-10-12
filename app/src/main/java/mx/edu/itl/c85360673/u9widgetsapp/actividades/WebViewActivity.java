@@ -12,11 +12,16 @@ public class WebViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web_view);
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_web_view );
 
-        webView = (WebView) findViewById(R.id.webview);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://github.com/Chahemon");
+        //--------------------------------------------------------------------
+        // Agregamos la configuracion que va a tener nuestro WebView ( En mi caso, mi pagina de github )
+
+        webView = ( WebView ) findViewById( R.id.webview );
+        webView.setWebViewClient( new WebViewClient() );
+        webView.loadUrl( "https://github.com/Chahemon" );
+
+        //--------------------------------------------------------------------
     }
 }

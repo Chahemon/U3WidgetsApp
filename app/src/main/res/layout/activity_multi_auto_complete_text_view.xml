@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7181D8"
     android:orientation="vertical"
     tools:context=".actividades.MultiAutoCompleteTextViewActivity">
 
@@ -11,14 +12,21 @@
         android:id="@+id/mactv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
         android:completionThreshold="1"
-        android:hint="escribe paises aqui" />
+        android:hint="Escribe paises aqui" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="82dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
         android:onClick="mostrarEntradaOnClick"
-        android:text="mostrar entrada" />
+        android:text="mostrar entrada"
+        android:textSize="16sp" />
 
 </LinearLayout>

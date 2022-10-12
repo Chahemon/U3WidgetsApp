@@ -20,8 +20,8 @@ public class CheckBoxActivity extends AppCompatActivity {
     //----------------------------------------------------------------------------------------------
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate( Bundle savedInstanceState ) {
+        super.onCreate( savedInstanceState );
         setContentView ( R.layout.activity_checkbox );
 
         _chkClubFutbol_1 = findViewById ( R.id._chkClubFutbol_1 );
@@ -59,11 +59,11 @@ public class CheckBoxActivity extends AppCompatActivity {
                 break;
             case R.id._chkClubFutbol_2 :
                 if ( _chkClubFutbol_2.isChecked() )
-                    _sMensaje = _chkClubFutbol_2.getText ().toString() + " superganador de Champions";
+                    _sMensaje = _chkClubFutbol_2.getText ().toString() + " el más Grande de España";
                 break;
             case R.id._chkClubFutbol_3 :
                 if ( _chkClubFutbol_3.isChecked() )
-                    _sMensaje = _chkClubFutbol_3.getText ().toString() + " la aplanadora alemana";
+                    _sMensaje = _chkClubFutbol_3.getText ().toString() + " superganador de Champions";
                 break;
         }
 

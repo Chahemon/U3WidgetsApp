@@ -4,18 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    android:gravity="center"
+    android:background="#00BCD4"
+    android:gravity="center|clip_vertical|center_horizontal"
+    android:onClick="btnRatingBar"
+    android:orientation="vertical"
     tools:context=".actividades.RatingBarActivity">
 
     <RatingBar
         android:id="@+id/rBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="#00BCD4"
         android:numStars="5"
+        android:onClick="btnRatingBar"
         android:rating="0"
         tools:layout_editor_absoluteX="76dp"
         tools:layout_editor_absoluteY="617dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:fontFamily="monospace"
+        android:text="Su Calificación actual es: "
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnRatingBar"
+        android:text="Checar" />
 
 </LinearLayout>
